@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./webcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/background2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Personal Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Undergraduate</p>
+                <h1>Hi, I'm <span>Sonal </span><br>Liyanage From Colombo </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------about------------------->
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img6.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a second year student pursuing Information Technology @ SLIIT Malabe University. 
+                        I usually like to gain new experiences, meet new people and learn new professionally related things and also self motivated and hard working. 
+                        And I am passionate about learning new technologies and management skills and learn more about leadership skills and passionate about working under competent people .</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Communication Skills</li>
+                            <li>Adaquete knowledge and experience about programming languages done under modules up to second year</li>
+                            <li>Hard Working</li>
+                            <li>Excellent Experience in Microsoft Office (Word, PowerPoint)</li>
+                            <li>Good organizational, multitasking, and problem-solving abilities</li>    
+                            <li>Good communication skills with a focus on team building and customer relations</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SLIIT</span><br>Undergraduate</li>
+                            <li><span>Royal College, Colombo 07</span><br>Completed G.C.E Advanced Level Examination in Biology Stream. Biology(C), Chemistry(S), Physics(S)</li>
+                            <li><span>Goethe Institute</span><br>Completed A1 and A2 Level</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Personal Work</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2> Web Application Designing</h2>
+                    <p>A Grocery Management System for a supermarket for both client and admin interactions. this was done as a project for 2nd year 2nd semester for ITP module. This project covers all the aspects of  grocery management system with Inventory and Stock Management, Customer Management, Staff Management, Maintenance Management, Finance Management, Purchase and Sales Management, Delivery Management and Marketing Management.
+
+                        My part of the project was to manage Inventory and Stocks Management of the store which was mostly handled by the admin of the company. This included all CRUD operations, search features, report generation. 
+                        
+                        Technology used - MERN stack, Postman, Visual Studio(development IDE),Figma, Git</p>
+                         <a href="https://github.com/SLIITITP/y2_s2_wd_it_02-itp2022_s2_b02_g17"> learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2> Online Bus Ticket Reservation System</h2>
+                    <p>This project was done under OOP Module in second year first semester and implemented
+                        by using java, java servlet and MySQL 
+                    </p>
+                         <a href="#"> learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>Mobile App Designing</h2>
+                    <p>"Olympia" is an e-commerce application where customers can buy sports wear online. Customers can order items through the app, add comments and review about the shop and the items they buy. And manage all the procedure till the purchase of the items. 
+
+                        My part of the project was to build the main search of the application, build the home page and manage customer revies and comments on the items they buy. 
+                        
+                        Technology used - Java, Firebase Database, Android Studio(development IDE)</p>
+                         <a href="https://github.com/it21006548/Olympians"> learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>UI/UX Designs</h2>
+                    <p>Refer this link to see my personal work on UI/UX designs</p>
+                         <a href="https://www.behance.net/sonalliyanage99"> learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>  
+    
+    <!-------------portfolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/homeui.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>"Olympia" is an e-commerce application where customers can buy sports wear online. Customers can order items through the app, add comments and review about the shop and the items they buy. And manage all the procedure till the purchase of the items. 
+
+                            My part of the project was to build the main search of the application, build the home page and manage customer revies and comments on the items they buy. 
+                            
+                            Technology used - Java, Firebase Database, Android Studio(development IDE)</p>
+                            <a href="https://github.com/it21006548/Olympians" ><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img7.png">
+                    <div class="layer">
+                        <h3>Online Grocery Store</h3>
+                        <p>A Grocery Management System for a supermarket for both client and admin interactions. this was done as a project for 2nd year 2nd semester for ITP module. This project covers all the aspects of  grocery management system with Inventory and Stock Management, Customer Management, Staff Management, Maintenance Management, Finance Management, Purchase and Sales Management, Delivery Management and Marketing Management.
+
+                            My part of the project was to manage Inventory and Stocks Management of the store which was mostly handled by the admin of the company. This included all CRUD operations, search features, report generation. 
+                            
+                            Technology used - MERN stack, Postman, Visual Studio(development IDE),Figma, Git</p>
+                            <a href="https://github.com/SLIITITP/y2_s2_wd_it_02-itp2022_s2_b02_g17" ><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Bus Ticket Ordering System</h3>
+                        <p>This project was done under OOP Module in second year first semester and implemented
+                            by using java, java servlet and MySQL</p>
+                            <a href="#" ><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!----------Contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sonalliyanage69@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0701172165</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sonal-liyanage"><i class="fab fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href="images/My Cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright to Sonal Daham koggala Liyanage,  Made <i class="fas fa-heart"></i> by Sonal Liyanage </p>
+        </div>
+    </div>
+ 
+    <script>
+        var tablinks =  document.getElementsByClassName("tab-links");
+        var tabcontents =  document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwrVBkCZN3xtmUgPAf7w5pP1QaExg6CFbyysInW5LupwllDfqISCojFyXOeY-y9SLJ-uQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
